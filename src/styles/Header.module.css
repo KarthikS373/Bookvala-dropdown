@@ -1,0 +1,15 @@
+.header {
+  align-items: center;
+  background-color: rgb(59, 56, 56);
+  display: flex;
+  height: 20vh;
+  justify-content: center;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 80px;
+  color: rgb(224, 224, 224);
+}

@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function App() {
+import Dropdown from "./components/Dropdown";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import dropdownData from "./data/dropdown/data";
+import colourStyles from "./data/dropdown/styles";
+
+import styles from "./styles/App.module.css";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <div className={styles.container}>
+        <Dropdown options={dropdownData} styles={colourStyles} default={null} />
+      </div>
+      <Footer name={"Karthik S"} email={"lit2021012@iiitl.ac.in"} />
+    </>
   );
-}
+};
 
 export default App;
